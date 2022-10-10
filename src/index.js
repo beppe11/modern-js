@@ -25,3 +25,11 @@ console.log(message);
 const arr = [1, 2, 3];
 const [v1, v2, v3] = arr;
 console.log(v1 + v2 + v3);
+
+const sayHello = (name = "Guest") => console.log(`Hello, ${name}!`);
+
+sayHello();
+sayHello("Go");
+
+const { address = "Osaka" } = person;
+console.log(`${address}`);
