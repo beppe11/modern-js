@@ -33,3 +33,13 @@ sayHello("Go");
 
 const { address = "Osaka" } = person;
 console.log(`${address}`);
+
+const arr1 = [10, 20, 30];
+const arr2 = [40, 50, 60];
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+
+const arr4 = [1, 2];
+const arr5 = [...arr4];
+console.log(arr4);
+arr5[0] = 10;
