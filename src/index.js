@@ -43,3 +43,14 @@ const arr4 = [1, 2];
 const arr5 = [...arr4];
 console.log(arr4);
 arr5[0] = 10;
+
+const nameArr = ["Iwamoto", "Suzuki", "Yamada"];
+nameArr.map((name) => console.log(name));
+
+const numArr = [1, 2, 3, 4, 5];
+const numArr2 = numArr.filter((num) => {
+  return num % 2 === 1;
+});
+console.log(numArr2);
+
+nameArr.map((name, index) => console.log(`${index + 1} is ${name}`));
